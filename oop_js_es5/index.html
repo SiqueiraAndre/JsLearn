@@ -47,7 +47,20 @@
             this.setHeight = function setHeight(_height) {
                 Height = _height
             }
+
         }
+
+        // Criando método estático
+        Person.static_method = function(){
+            console.log('This is my first static method' + name);
+        }    
+
+        Person.static_method()
+        Person.static_attr = 'my_first_attr_static'
+                     
+
+        console.log(Person.static_attr)
+
         console.log(new Person())
         var leonan = new Person()
         leonan.setName('Leonan')
