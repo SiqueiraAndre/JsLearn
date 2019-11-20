@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>OOP JavaScript</p>
+
+    <script>
+        function Person() {
+            var name
+            var age
+            var height
+        
+
+            this.sayHello = function(name) {
+                console.log('Hello ' + name)
+            }
+
+            this.hello = function hello(name) {
+                console.log('Hello ' + name)
+            }
+
+            this.getName = function getName() {
+                return name
+            }
+
+            this.setName = function setName(_name) {
+                name = _name;
+            }
+
+            this.getAge = function () {
+                return age
+            }
+
+            this.setAge = function (_age) {
+                age = _age
+            }
+
+            this.getHeight = function getHeight() {
+                return Height
+            }
+
+            this.setHeight = function setHeight(_height) {
+                Height = _height
+            }
+        }
+        console.log(new Person())
+        var leonan = new Person()
+        leonan.setName('Leonan')
+        leonan.setAge(23)
+        leonan.setHeight(1.76) 
+        leonan.sayHello(leonan.getName())
+        leonan.hello(leonan.getName())
+
+
+        console.log(leonan)
+    
+    </script>
+</body>
+</html>
